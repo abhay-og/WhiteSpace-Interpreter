@@ -16,8 +16,7 @@ def whitepycli(filename, debug):
         lines = f.read()
         item = lexer.Lexer(line=lines, debug=debug)
         item.get_all_tokens()
-        p = ws_parser.Parser(item.tokens)
-        p.parse()
+        
 
 
 if __name__ == '__main__':
